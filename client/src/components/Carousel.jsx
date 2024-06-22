@@ -47,8 +47,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="myReview">
-      <section className="wellwishers-contain">
+
+      <section className="">
         <Swiper
           ref={swiperRef}
           slidesPerView={1}
@@ -73,7 +73,7 @@ const Testimonials = () => {
           ))}
         </Swiper>
       </section>
-    </div>
+
   );
 };
 

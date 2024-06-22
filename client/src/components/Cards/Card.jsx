@@ -15,8 +15,8 @@ const Card = ({title,description,location}) => {
       <span className="opacity-50 font-medium text-sm">
         {location}
       </span>
-      <div>
-        <Link to={navigate('/card-details')}><button className="bg-[#6522ad] text-white px-4 py-2 mt-4 rounded-lg hover:opacity-85">Enroll</button></Link>
+      <div className="mt-5">
+        <Link to='/card-details' className="bg-[#6522ad] text-white px-4 py-2 mt-4 rounded-lg hover:opacity-85">Enroll</Link>
       </div>
     </div>
   );

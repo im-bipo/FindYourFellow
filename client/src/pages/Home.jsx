@@ -5,6 +5,7 @@ import { TbTrekking } from "react-icons/tb";
 import { GiFullMotorcycleHelmet } from "react-icons/gi";
 import { MdVolunteerActivism } from "react-icons/md";
 import CardList from "../components/Cards/CardList";
+import Filter from "../components/eventsFilter/Filter"
 
 const Home = () => {
   return (
@@ -42,7 +43,12 @@ const Home = () => {
         <div>
           
         </div>
-        <CardList className="mt-20" />
+        <div className="my-10 w-full -mx-28 sm:-mx-5 lg:-mx-14">
+        <Filter className="" />
+        </div>
+        <div  className="">
+        <CardList />
+        </div>
       </div>
     </>
   );

@@ -1,9 +1,12 @@
 import React from 'react'
+import { SignUp } from '@clerk/clerk-react'
 
-const SignUp = () => {
+const Signup = () => {
   return (
-    <div>SignUp</div>
+    <div>
+     <SignUp signinUrl="/signup" forceRedirectedUrl="/home" />
+    </div>
   )
 }
 
-export default SignUp
+export default Signup

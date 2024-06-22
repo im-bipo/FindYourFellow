@@ -1,9 +1,13 @@
-import React from 'react'
 
-const SignIn = () => {
+import React from 'react';
+import { SignIn } from '@clerk/clerk-react';
+
+const SignInPage = () => {
   return (
-    <div>SignIn</div>
-  )
+    <div className='grid place-items-center mt-20'>
+      <SignIn signinUrl="/signin" forceRedirectedUrl={"/home"} />
+    </div>
+  );
 }
 
-export default SignIn
+export default SignInPage;
