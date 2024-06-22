@@ -13,7 +13,6 @@ import CardList from "../components/Cards/CardList";
 import Filter from "../components/eventsFilter/Filter";
 
 const Home = () => {
-
   let activities = [
     {
       id: "1",
@@ -53,7 +52,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="grid grid-cols-4 sm:flex justify-center w-full absolute top-[35rem]">
+      <div className="grid grid-cols-4 sm:flex justify-center w-full relative -top-[4rem]">
         {activities.map((activity) => (
           <div
             className="flex flex-col justify-center bg-white p-6  sm:p-10 shadow-blue-300 shadow-lg border-2 items-center transition duration-150 ease-in  transform  hover:-translate-y-1 hover:scale-110 hover:bg-sky-100 hover:rounded-md hover:cursor-pointer hover:z-20"
@@ -68,13 +67,13 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="mt-40 px-11  lg:px-36 text-center">
+      <div className="mt-5 px-12  lg:px-36 text-center">
         Find Your Fellow is a user-friendly social networking app that connects
         you with people nearby who share your interests. It helps you find and
         connect with like-minded individuals, discover local events, and expand
         your social circle effortlessly.
         <div></div>
-        <div className="my-10 w-full -mx-28 sm:-mx-5 lg:-mx-14">
+        <div className="mt-12 mb-9 w-full -mx-28 sm:-mx-5 lg:-mx-14">
           <Filter className="" />
         </div>
         <div className="">
