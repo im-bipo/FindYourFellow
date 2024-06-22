@@ -11,12 +11,13 @@ const filterModal = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "white", // Example background color
+    backgroundColor: "#f9f8ff", // Example background color
     border: "1px solid #ccc", // Example border
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)", // Example box shadow
-    padding: "20px", // Example padding
+    padding: "24px", // Example padding
     height: "40vh",
     width: "20rem",
+    borderRadius:"20px",
   },
 };
 
@@ -58,9 +59,7 @@ function App() {
           </button>
         </div>
         <div>I am a modal</div>
-        <form>
-          <input />
-        </form>
+
       </Modal>
     </div>
   );
